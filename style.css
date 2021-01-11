@@ -209,7 +209,14 @@ button:hover
 #restaurants i
 {
 	font-weight:100;
-	fill: red;
+}
+
+#restaurants i:hover
+{
+	font-weight: bold;
+	background:-webkit-linear-gradient(#FF79DA,#9356DC);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
 }
 
 /*FOOTER*/
@@ -313,6 +320,14 @@ main h2
 	font-size: 25px;
 }
 
+.grostitre i:hover
+{
+	font-weight: bold;
+	background:-webkit-linear-gradient(#FF79DA,#9356DC);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}
+
 .titre1
 {
 	padding-top: 25px;
@@ -353,12 +368,53 @@ main h2
 	margin-right: 10px;
 }
 
+.check
+{	
+	border-top-right-radius: 0.75rem;
+	border-bottom-right-radius: 0.75rem;
+	color: white;
+	background-color:#99E2D0;
+	margin:-10px;
+	padding: 20px;
+}
+
 .button2
 {
 	margin-top: 30px;
 	margin-bottom: 30px;
 	font-size: large;
 	padding: 10px 23px;
+}
+
+.delay0
+{
+	animation:apparition 2s;
+	animation-delay:0s;
+}
+
+.delay1
+{
+	animation: apparition 2s;
+	animation-delay: 1s;
+}
+
+.delay2
+{
+	animation:apparition 2s;
+	animation-delay: 2s;
+}
+
+@keyframes apparition
+{
+	from{
+		transform:translateY(30px);
+		opacity: 0;
+	}
+
+	to{
+		transform: translateY(0);
+		opacity: 1;
+	}
 }
 
 
