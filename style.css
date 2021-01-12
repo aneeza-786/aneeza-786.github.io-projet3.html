@@ -421,14 +421,14 @@ main h2
 {
 	padding-top: 22px;
 	font-weight: bold;
-	position: absolute;
-	right: 1em;
 }
 
 .check
 {	
-	opacity: 1;
+	opacity:0;
 	transform: translateX(100%);
+	transition: all 300ms;
+	color: white;
 }
 
 .casesmenu:hover .check
@@ -436,13 +436,21 @@ main h2
 	opacity: 1;
 	transform: translateX(0%);
 	border-top-right-radius: 0.75rem;
-	border-bottom-right-radius: 0.75rem;
-	color: white;
+	border-bottom-right-radius: 0.75rem; 
 	background-color:#99E2D0;
 	margin:-10px;
 	padding: 20px;
 }
 
+.check i
+{
+	transition: all 400ms;
+}
+
+.casesmenu:hover .check i
+{
+	transform: rotate(720deg);
+}
 
 .button2
 {
