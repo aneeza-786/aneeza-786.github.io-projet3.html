@@ -17,6 +17,60 @@ a
 	color: black;
 }
 
+.blocpage
+{
+	animation: blocpageopacity 3s;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes blocpageopacity
+{
+	0%{
+		opacity: 0;
+	}
+
+	50%{
+		opacity:0;
+	}
+
+	99%{
+		opacity:0.1;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+
+.loading
+{
+	position: absolute;
+	top:50%;
+	left:50%;
+	font-size:50px;
+	background:-webkit-linear-gradient(#FF79DA,#9356DC);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	animation: spin 3s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes spin
+{
+	0%{ 
+		transform: rotate(0deg);
+		opacity:1; 
+	}
+	99%{
+		opacity: 1;
+	}
+	100%{ 
+		transform: rotate(600deg);
+		opacity: 0;
+	}
+}
+
 
 /*HEADER*/
 
@@ -209,6 +263,7 @@ button:hover
 #restaurants i
 {
 	font-weight:100;
+	transition: all 500ms ease-out;
 }
 
 #restaurants i:hover
@@ -265,7 +320,7 @@ footer a
 {
 	color:white;
 }
-/*------------------------------------------------*/
+/*--------------------------------------------PAGES---MENU---------------------------------------------------------*/
 
 /*HEADER*/
 
@@ -318,6 +373,7 @@ main h2
 {
 	font-weight:100;
 	font-size: 25px;
+	transition: all 500ms ease-out;
 }
 
 .grostitre i:hover
@@ -370,12 +426,18 @@ main h2
 
 .check
 {	
+	opacity: 0;
 	border-top-right-radius: 0.75rem;
 	border-bottom-right-radius: 0.75rem;
 	color: white;
 	background-color:#99E2D0;
 	margin:-10px;
 	padding: 20px;
+}
+
+.check:hover
+{
+	opacity: 1;
 }
 
 .button2
@@ -386,29 +448,29 @@ main h2
 	padding: 10px 23px;
 }
 
-.delay0
+.delay0,.delay1,.delay2
 {
+	opacity:0;
 	animation:apparition 2s;
 	animation-delay:0s;
+	animation-fill-mode: forwards;
 }
 
 .delay1
 {
-	animation: apparition 2s;
 	animation-delay: 1s;
 }
 
 .delay2
 {
-	animation:apparition 2s;
 	animation-delay: 2s;
 }
+
 
 @keyframes apparition
 {
 	from{
 		transform:translateY(30px);
-		opacity: 0;
 	}
 
 	to{
@@ -418,7 +480,7 @@ main h2
 }
 
 
-/*--------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------RESPONSIVE---ACCEUIL----------------------------------------------------------*/
 
 @media screen and (min-width:700px)
 {
@@ -478,5 +540,32 @@ main h2
 	{
 		padding-left:44px;
 	}
+
+	/*-----------------------RESPONSIVE---PAGES---MENU-------------------------------------------------*/
 	
+	.grostitre h2
+	{
+		margin-left:40%;
+	}
+
+	.delay0,.delay1,.delay2
+	{
+		width:28%;
+		padding-top: 3rem;
+		margin-left:-4em;
+	}
+
+	.allEPD
+	{
+		display: flex;
+		margin-top:4em;
+	}
+
+	.titre1
+	{
+		height:50px;
+		margin-left:4em;
+	}
+
+
 }
