@@ -429,6 +429,7 @@ main h2
 	transform: translateX(100%);
 	transition: all 300ms;
 	color: white;
+	width:0px;
 }
 
 .casesmenu:hover .check
@@ -440,6 +441,7 @@ main h2
 	background-color:#99E2D0;
 	margin:-10px;
 	padding: 20px;
+	width: auto;
 }
 
 .check i
@@ -450,6 +452,11 @@ main h2
 .casesmenu:hover .check i
 {
 	transform: rotate(720deg);
+}
+
+.casesmenu:hover .prix
+{
+	margin-right: 1em;
 }
 
 .button2
