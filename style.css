@@ -444,7 +444,7 @@ main h2
 	border-bottom-right-radius: 0.75rem; 
 	background-color:#99E2D0;
 	margin:-10px;
-	padding: 20px;
+	padding:20px;
 	width: auto;
 }
 
@@ -505,7 +505,7 @@ main h2
 
 /*------------------------------RESPONSIVE---ACCEUIL----------------------------------------------------------*/
 
-@media screen and (min-width:700px)
+@media screen and (min-width:815px)
 {
 	.endroit
 	{
