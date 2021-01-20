@@ -598,3 +598,12 @@ main h2
 
 
 }
+
+@media screen and (min-width:460px) and (max-width: 815px)
+
+{
+	.casesmenu
+	{
+		width:25em;
+	}
+}
